@@ -1,0 +1,18 @@
+# Backend build
+backend/target/
+backend/*.iml
+backend/.idea/
+
+# Node
+client/node_modules/
+client/.next/
+client/out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp

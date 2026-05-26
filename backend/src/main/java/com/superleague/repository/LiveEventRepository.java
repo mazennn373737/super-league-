@@ -1,0 +1,10 @@
+package com.superleague.repository;
+
+import com.superleague.model.LiveEvent;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+import java.util.UUID;
+
+public interface LiveEventRepository extends JpaRepository<LiveEvent, UUID> {
+    List<LiveEvent> findByFixtureIdOrderByMinuteAsc(UUID fixtureId);
+}
